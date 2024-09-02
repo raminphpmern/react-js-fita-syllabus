@@ -1,3 +1,7 @@
 Sample for Ternary Operator
 
 https://www.programiz.com/online-compiler/8AB51gH7csOvW
+
+Sample code for different types of functions
+
+https://www.programiz.com/online-compiler/4zoH4nUCa2uZq
