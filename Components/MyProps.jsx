@@ -8,7 +8,7 @@ function MyProps(props) {
       <p>{props.description}</p>
 
       <div className="content">   
-          {props.children}  
+          {/* {props.children}   */}
           {/* // The Extra data/JSX passed can be accessed using props.children */}
       </div>
     </div>
