@@ -1,0 +1,18 @@
+
+Dummy/Fake/Mock Json Api's for Sample POC's 
+
+https://www.jsonplaceholder.org/
+
+https://jsonplaceholder.typicode.com/
+
+https://jsonplaceholder.typicode.com/todos
+
+https://jsonplaceholder.typicode.com/photos
+
+https://dummyjson.com/docs/products
+
+https://www.programiz.com/javascript#guide
+
+https://www.geeksforgeeks.org/javascript-fetch-method/
+
+https://dev.to/roshan_100kar/display-dummy-api-json-data-to-a-table-in-react-js-3702
