@@ -27,9 +27,9 @@ class SampleCounter extends React.Component {
 
   componentDidMount() {
     console.log("Component did mount has been called");
-    setTimeout(() => {
-      this.setState({count: 1})
-    }, 1000)
+    // setTimeout(() => {
+    //   this.setState({count: 1})
+    // }, 1000)
   }
 
   shouldComponentUpdate() {
@@ -37,11 +37,11 @@ class SampleCounter extends React.Component {
     return true;
   }
 
-  getSnapshotBeforeUpdate(prevProps, prevState) {
-    console.log("getSnapshotBeforeUpdate has been called")
-    document.getElementById("div1").innerHTML =
-    "Before the update, the count was " + prevState.count;
-  }
+  // getSnapshotBeforeUpdate(prevProps, prevState) {
+  //   console.log("getSnapshotBeforeUpdate has been called")
+  //   document.getElementById("div1").innerHTML =
+  //   "Before the update, the count was " + prevState.count;
+  // }
   componentDidUpdate() {
     // setTimeout(() => {
     //   this.setState({count: 5})
@@ -49,11 +49,13 @@ class SampleCounter extends React.Component {
     console.log("componentdidupdate has been called")
     document.getElementById("div2").innerHTML =
     "The updated count is " + this.state.count;
+    document.getElementById("div3").innerHTML =
+    "Did Update Triggered ";
   }
 
   componentWillUnmount() {
     console.log("The component is to be unmounted.");
-    this.setState({count: 10})
+    // this.setState({count: 10})
   }
   chkEvent = (a, b) => {
     console.log("a---", a)
@@ -71,6 +73,7 @@ class SampleCounter extends React.Component {
         <h2>{this.state.count}</h2>
         <div id="div1"></div>
         <div id="div2"></div>
+        <div id="div3"></div>
         <button onClick={this.increment}>Increase</button>
         <button onClick={this.decrement}>Decrease</button>
         
