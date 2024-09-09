@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge">
+    <meta name="viewport" 
+          content="width=device-width, 
+                   initial-scale=1.0">
+    <title>JavaScript localStorage</title>
+
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: green;
+            color: white;
+            margin: auto;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        .box {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">GeeksforGeeks</div>
+    <div>Name: </div>
+    <script>
+
+        // Saving data as key/value pair
+        localStorage.setItem("name", "GeeksforGeeks");
+        localStorage.setItem("color", "green");
+
+        // Updating data
+        localStorage.setItem("name", "GeeksforGeeks(GfG)");
+        localStorage.setItem("color", "Blue");
+
+        // Get the data by key
+        let name = localStorage.getItem("name");
+        console.log("This is - ", name);
+        let color = localStorage.getItem("color");
+        console.log("Value of color is - ", color);
+
+        // Get key on a given position
+        let key1 = localStorage.key(1);
+        console.log(key1);
+
+        // Get number of stored items
+        let items = localStorage.length;
+        console.log("Total number of items is ", items);
+
+        // Remove key with its value
+        localStorage.removeItem("color");
+
+        // Delete everything
+        localStorage.clear();
+    </script>
+</body>
+
+</html>
