@@ -24,6 +24,16 @@ https://medium.com/@trig79/javascript-the-early-lessons-for-vs-foreach-vs-for-of
 
 https://medium.com/edge-coders/javascript-timers-everything-you-need-to-know-5f31eaa37162
 
+---- Mutability vs Immutability in Javascript
+
+https://medium.com/@Evelyn.Taylor/mutability-vs-immutability-in-javascript-5d6f8b4e0925
+
+https://www.freecodecamp.org/news/mutability-vs-immutability-in-javascript/#heading-what-is-immutability-in-javascript
+
+Primitive vs Non-Primitive Data types in Javascript
+
+https://www.geeksforgeeks.org/primitive-and-non-primitive-data-types-in-javascript/
+
 ---- Javascript Callback Different Ways ------
 
 Mastering JavaScript Callbacks with These 5 Practical Exercises
@@ -81,5 +91,7 @@ https://www.freecodecamp.org/news/the-react-cheatsheet/
 https://cheatsheets.shecodes.io/react
 
 https://devhints.io/react
+
+https://dev.to/zinox9/react-cheatsheet-3eao
 
 https://zerotomastery.io/cheatsheets/react-cheat-sheet/#useeffect
