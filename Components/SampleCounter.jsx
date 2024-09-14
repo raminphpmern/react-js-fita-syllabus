@@ -27,9 +27,9 @@ class SampleCounter extends React.Component {
 
   componentDidMount() {
     console.log("Component did mount has been called");
-    // setTimeout(() => {
-    //   this.setState({count: 1})
-    // }, 1000)
+    setTimeout(() => {
+      this.setState({count: 1})
+    }, 1000)
   }
 
   shouldComponentUpdate() {
