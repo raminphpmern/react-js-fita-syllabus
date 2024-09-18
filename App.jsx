@@ -7,6 +7,7 @@ import Car from "./Components/CarComps";
 import NoPage from "./Components/Pages/NoPage";
 import SampleCounter from "./Components/SampleCounter";
 import MyPropsSample from "./Components/MyPropsSample";
+import GenRandomInteger from "./Components/GenRandomInteger";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -23,19 +24,19 @@ const App = () => {
     //     </Route>
     //   </Routes>
     // </BrowserRouter>
-    <>
+    
+      <>
       <BrowserRouter>
-         <Routes>
-           <Route path="/" element={<Layout />}>
-             <Route index element={<Home />} />
-             <Route path="blogs" element={<Blogs />} />
-             <Route path="contact" element={<Contact />} />
-             <Route path="updateobjects" element={<Car />} />
-             <Route path="*" element={<NoPage />} />
-           </Route>
-         </Routes>
-      </BrowserRouter>
-      <SampleCounter></SampleCounter><MyPropsSample /></>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="blogs" element={<Blogs />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="updateobjects" element={<Car />} />
+            <Route path="*" element={<NoPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter><SampleCounter></SampleCounter><MyPropsSample /><GenRandomInteger /></>
   );
 }
 
