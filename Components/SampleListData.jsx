@@ -8,11 +8,17 @@ function SampleListData() {
   const URL = "https://jsonplaceholder.typicode.com/posts";
 
   useEffect(() => {fetchData()}, []);
-
+  // useEffect(() => {
+  //   fetch(URL)
+  //   .then(response => response.json())
+  //   .then(data =>{ 
+  //     console.log(data)
+  //     getData(data)
+  // })
+  // }, [])
   const fetchData = () => {
     fetch(URL)
       .then((res) => res.json())
-
       .then((response) => {
         console.log(response);
         getData(response);
@@ -20,14 +26,17 @@ function SampleListData() {
   };
   
   return (
+    <>
+    {console.log("data", data)}
     <div>
       <h1>How Display API data in Table in React JS</h1>
+      <table>        
       <tbody>
         <tr>
           <th>User ID</th>
           <th>ID</th>
           <th>Title</th>
-          <th>Descripation</th>
+          <th>Description</th>
         </tr>
         {data.map((item, i) => (
           <tr key={i}>
@@ -37,8 +46,10 @@ function SampleListData() {
             <td>{item.body}</td>
           </tr>
         ))}
-      </tbody>
+      </tbody>      
+      </table>
     </div>
+    </>
   );
 }
 
