@@ -16,3 +16,6 @@ https://www.programiz.com/javascript#guide
 https://www.geeksforgeeks.org/javascript-fetch-method/
 
 https://dev.to/roshan_100kar/display-dummy-api-json-data-to-a-table-in-react-js-3702
+
+https://randomuser.me/
+https://randomapi.com/documentation
