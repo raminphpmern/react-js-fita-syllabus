@@ -22,11 +22,15 @@ export default function ReducerHookSample() {
   function handleDecrement() {
     dispatch({ type: "decrement" });
   }
+  function handleNone() {
+    dispatch({ type: "test" });
+  }
   return (
     <>
       <h1>Count:{state.count}</h1>
       <button onClick={handleIncrement}>Increment</button>
       <button onClick={handleDecrement}>Decrement</button>
+      <button onClick={handleNone}>None</button>
     </>
   );
 }
